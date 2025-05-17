@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Product 1",
+    "link": "https://example.com/product1",
+    "image": "https://raw.githubusercontent.com/yourrepo/images/product1.jpg"
+  },
+  {
+    "name": "Product 2",
+    "link": "https://example.com/product2",
+    "image": "https://raw.githubusercontent.com/yourrepo/images/product2.jpg"
+  },
+  {
+    "name": "Product 3",
+    "link": "https://example.com/product3",
+    "image": "https://raw.githubusercontent.com/yourrepo/images/product3.jpg"
+  }
+]
