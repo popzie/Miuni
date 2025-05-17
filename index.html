@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test JSON Load</title>
+</head>
+<body>
+  <h1>Products</h1>
+  <div id="products"></div>
+
+  <script>
+    fetch('products.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('products');
+        data.forEach(p => {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <h2>${p.name}</h2>
+            <img src="${p.image}" width="150"/>
+            <p>${p.description}</p>
+            <a href="${p.link}" target="_blank">Buy Now</a>
+          `;
+          container.appendChild(div);
+        });
+      })
+      .catch(e => {
+        document.body.innerHTML += '<p style="color:red;">Error loading products.json</p>';
+        console.error(e);
+      });
+  </script>
+</body>
+</html>
