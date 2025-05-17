@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miuni</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .search-container {
+      text-align: center;
+      padding: 1rem;
+    }
+    .search-container input {
+      width: 300px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .product {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .product-name {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    .buy-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #ff5722;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .buy-btn:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Miuni</h1>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search products...">
+  </div>
+
+  <main id="productContainer" class="product-list"></main>
+
+  <script>
+    let productsData = [];
+
+    async function loadProducts() {
+      try {
+        const response = await fetch('products.json');
+        const products = await response.json();
+        productsData = products;
+        renderProducts(products);
+      } catch (error) {
+        console.error('Error loading products:', error);
+      }
+    }
+
+    function renderProducts(products) {
+      const container = document.getElementById('productContainer');
+      container.innerHTML = '';
+
+      products.forEach(product => {
+        const productLink = document.createElement('a');
+        productLink.href = product.link;
+        productLink.className = 'product';
+
+        const img = document.createElement('img');
+        img.src = product.image;
+        img.alt = product.name;
+
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'product-name';
+        nameDiv.textContent = product.name;
+
+        const buyBtn = document.createElement('div');
+        buyBtn.className = 'buy-btn';
+        buyBtn.textContent = 'Buy Now';
+
+        productLink.appendChild(img);
+        productLink.appendChild(nameDiv);
+        productLink.appendChild(buyBtn);
+        container.appendChild(productLink);
+      });
+    }
+
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const filteredProducts = productsData.filter(product =>
+        product.name.toLowerCase().includes(searchTerm)
+      );
+      renderProducts(filteredProducts);
+    });
+
+    loadProducts();
+  </script>
+</body>
+</html>
+
+
+A search bar has been added! It lets users filter products by name in real-time as they type. If you want to expand this to search by category, description, or add filters like price range, just let me know!
+
