@@ -12,7 +12,7 @@
     "description": "best motorized recliner below 20k"
   },
   {
-    "name": "Green Gainz Roasted Eddamame",
+    "name": "Green Gainz Roasted Edamame",
     "image": "Images/green_gainz_edamame.jpg",
     "link": "https://amzn.in/d/6569ZD6",
     "description": "protein on the go"
@@ -22,5 +22,17 @@
     "image": "Images/singer_2250.jpg",
     "link": "https://amzn.in/d/cmRAUrs",
     "description": "best electric sewing machine under 10k"
+  }
+  {
+    "name": "Neutrogena Visible Repair Retinol Day & Night Eye Cream",
+    "image": "Images/neutrogena_eyecream.jpg",
+    "link": "https://amzn.in/d/3xoLG3F",
+    "description": "best eyecream"
+  }
+  {
+    "name": "HomeCloud Dish Drying Mat for Kitchen Counter Hide Stain Super Absorbent",
+    "image": "Images/dish_mat.jpg",
+    "link": "https://amzn.in/d/86y4zOs",
+    "description": "dish drying mat"
   }
 ]
