@@ -4,11 +4,23 @@
     "image": "Images/trunativ_monk.jpeg",
     "link": "https://amzn.in/d/bVOcwYv",
     "description": "zero sugar spike sugar alternative"
-  }
+  },
   {
-    "name": "Trunativ Monk Fruit Sweetener 1",
-    "image": "Images/trunativ_monk.jpeg",
-    "link": "https://amzn.in/d/bVOcwYv",
-    "description": "zero sugar spike sugar alternative"
-  } 
+    "name": "Solis Royale Motorized Recliner",
+    "image": "Images/solis_recliner.jpg",
+    "link": "https://amzn.in/d/07IrrYW",
+    "description": "best motorized recliner below 20k"
+  },
+  {
+    "name": "Green Gainz Roasted Eddamame",
+    "image": "Images/green_gainz_edamame.jpg",
+    "link": "https://amzn.in/d/6569ZD6",
+    "description": "protein on the go"
+  },
+  {
+    "name": "Singer 2250 Tradition Zig-Zag Sewing Machine",
+    "image": "Images/singer_2250.jpg",
+    "link": "https://amzn.in/d/cmRAUrs",
+    "description": "best electric sewing machine under 10k"
+  }
 ]
