@@ -58,5 +58,17 @@
         "image": "Images/lifelong_dumbell_2kg.jpg",
         "link": "https://amzn.in/d/g8GErnM",
         "description": "2*2kg dumbell for beginners"
+    },
+    {
+        "name": "Gear Turbo Expandable Water Resistant Anti-Theft Backpack",
+        "image": "Images/gear_45l.jpg",
+        "link": "https://amzn.to/4ky7irn",
+        "description": "cabin backback"
+    },
+    {
+        "name": "Safari Seek 45L Laptop Backpack Bag for Men and Women",
+        "image": "Images/safari_45l.jpg",
+        "link": "https://amzn.to/4kbLXnO",
+        "description": "cabin backback"
     }
 ]
