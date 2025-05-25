@@ -48,11 +48,16 @@
       padding: 15px;
       width: 250px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      min-height: 400px;
+      min-height: 420px;
+      position: relative;
+    }
+
+    .product-content {
+      flex-grow: 1;
+      text-decoration: none;
+      color: inherit;
     }
 
     .product img {
@@ -69,20 +74,22 @@
     .product p {
       font-size: 14px;
       color: #555;
-      flex-grow: 1;
     }
 
-    .product a {
+    .buy-button {
       display: inline-block;
       margin-top: 10px;
       padding: 8px 14px;
-      background-color: #007bff;
+      background-color: #28a745;
       color: white;
       text-decoration: none;
       border-radius: 4px;
       font-weight: bold;
       text-align: center;
-      align-self: center;
+    }
+
+    .product-content:hover {
+      opacity: 0.95;
     }
   </style>
 </head>
@@ -109,10 +116,12 @@
         const card = document.createElement('div');
         card.className = 'product';
         card.innerHTML = `
-          <img src="${p.image}" alt="${p.name}">
-          <h2>${p.name}</h2>
-          <p>${p.description}</p>
-          <a href="${p.link}" target="_blank">Buy Now</a>
+          <a class="product-content" href="product.html?id=${p.id}">
+            <img src="${p.image}" alt="${p.name}">
+            <h2>${p.name}</h2>
+            <p>${p.description}</p>
+          </a>
+          <a href="${p.link}" class="buy-button" target="_blank">Buy Now</a>
         `;
         container.appendChild(card);
       });
