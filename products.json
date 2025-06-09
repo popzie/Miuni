@@ -82,5 +82,33 @@
     "image": "Images/safari_45l.jpg",
     "link": "https://amzn.to/4kbLXnO",
     "description": "cabin backback"
+  },
+  {
+    "id": 13,
+    "name": "Vaseline Healthy Bright, Daily Brightening Daily Moisturizer",
+    "image": "Images/vaseline_moisturizer.jpg",
+    "link": "https://amzn.to/4kR5V7k",
+    "description": "daily moisturizer"
+  },
+  {
+    "id": 14,
+    "name": "Wellbeing Nutrition Glow Korean Marine Collagen Skin Radiance Peptide",
+    "image": "Images/wellbeing_collagen.jpg",
+    "link": "https://amzn.to/4jE6YXd",
+    "description": "collagen"
+  },
+  {
+    "id": 15,
+    "name": "Chemist at Play UnderArm Roll-On with 5% AHA",
+    "image": "Images/chemist_at_play_roll_on.jpg",
+    "link": "https://amzn.to/4mUEs6q",
+    "description": "underarm roll on"
+  },
+  {
+    "id": 16,
+    "name": "Dove Acne Clear Serum Body Wash",
+    "image": "Images/dove_body_wash.jpg",
+    "link": "https://amzn.to/4kVYyLT",
+    "description": "bodywash"
   }
 ]
