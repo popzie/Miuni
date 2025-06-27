@@ -124,5 +124,26 @@
     "image": "Images/furlay_table_wood.jpg",
     "link": "https://amzn.to/40nioHZ",
     "description": "wooden swork table"
+  },
+  {
+    "id": 19,
+    "name": "MSI B760M Bomber WiFi Motherboard, Micro-ATX - Supports 14th/13th/12th Gen Intel Core",
+    "image": "Images/msi_760M.jpg",
+    "link": "https://amzn.to/3ZU5ktB",
+    "description": "best ddr5 motherboard for Intel"
+  },
+  {
+    "id": 20,
+    "name": "Lifelong USB Direct Thermal Label Printer | 4x6 Black and White",
+    "image": "Images/life_long_thermal.jpg",
+    "link": "https://amzn.to/3GhHS2R",
+    "description": "thermal printer"
+  },
+  {
+    "id": 21,
+    "name": "Ant Esports Elite 1100 Mid-Tower Computer Case/Gaming Cabinet - Black",
+    "image": "Images/ant_cabinet.jpg",
+    "link": "https://amzn.to/4np5Z08",
+    "description": "cpu cabinet"
   }
 ]
