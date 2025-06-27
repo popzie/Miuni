@@ -110,5 +110,12 @@
     "image": "Images/dove_body_wash.jpg",
     "link": "https://amzn.to/4kVYyLT",
     "description": "bodywash"
+  },
+  {
+    "id": 17,
+    "name": "FURLAY Slate Office Desk and Study Table | 1 Year Warranty",
+    "image": "Images/furlay_table.jpg",
+    "link": "https://amzn.to/4no7qMr",
+    "description": "work table"
   }
 ]
