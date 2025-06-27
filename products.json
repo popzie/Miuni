@@ -116,6 +116,13 @@
     "name": "FURLAY Slate Office Desk and Study Table | 1 Year Warranty",
     "image": "Images/furlay_table.jpg",
     "link": "https://amzn.to/4no7qMr",
-    "description": "work table"
+    "description": "metal work table"
+  },
+  {
+    "id": 18,
+    "name": "FURLAY Aero Study Table | Century Engineered Wood | 100 x 50 x 77 cm",
+    "image": "Images/furlay_table_wood.jpg",
+    "link": "https://amzn.to/40nioHZ",
+    "description": "wooden swork table"
   }
 ]
