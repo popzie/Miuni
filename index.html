@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MiuniLabs</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     *{
@@ -33,26 +33,15 @@
 
     header{
       display:flex;
-      justify-content:space-between;
+      justify-content:center;
       align-items:center;
-      padding:24px 8%;
+      padding:30px 8%;
     }
 
     .logo{
-      font-size:28px;
-      font-weight:700;
+      font-size:32px;
+      font-weight:800;
       letter-spacing:1px;
-    }
-
-    nav a{
-      text-decoration:none;
-      color:#d1d5db;
-      margin-left:24px;
-      transition:0.3s;
-    }
-
-    nav a:hover{
-      color:white;
     }
 
     .hero{
@@ -107,11 +96,12 @@
     }
 
     .btn{
-      padding:16px 28px;
+      padding:16px 32px;
       border-radius:14px;
       text-decoration:none;
       font-weight:600;
       transition:0.3s;
+      font-size:18px;
     }
 
     .primary{
@@ -121,18 +111,7 @@
     }
 
     .primary:hover{
-      transform:translateY(-3px);
-    }
-
-    .secondary{
-      border:1px solid rgba(255,255,255,0.15);
-      color:white;
-      background:rgba(255,255,255,0.05);
-      backdrop-filter:blur(10px);
-    }
-
-    .secondary:hover{
-      background:rgba(255,255,255,0.1);
+      transform:translateY(-4px) scale(1.02);
     }
 
     .features{
@@ -174,6 +153,7 @@
     }
 
     @media(max-width:768px){
+
       h1{
         font-size:48px;
       }
@@ -182,25 +162,27 @@
         font-size:18px;
       }
 
-      nav{
-        display:none;
+      .logo{
+        font-size:28px;
+      }
+
+      .btn{
+        width:100%;
       }
     }
   </style>
 </head>
+
 <body>
 
   <div class="bg"></div>
 
   <header>
     <div class="logo">MiuniLabs</div>
-
-    <nav>
-      <a href="/">Home</a>
-    </nav>
   </header>
 
   <section class="hero">
+
     <div class="hero-content">
 
       <div class="tag">
@@ -218,13 +200,17 @@
       </p>
 
       <div class="buttons">
-        <a href="/affiliate" class="btn primary">Explore Apps</a>
-        <a href="https://github.com/miuni2024" class="btn secondary">
-          GitHub
+        <a 
+          href="https://play.google.com/store/apps/details?id=com.indilearn.trace"
+          class="btn primary"
+          target="_blank"
+        >
+          Explore Apps
         </a>
       </div>
 
     </div>
+
   </section>
 
   <section class="features">
