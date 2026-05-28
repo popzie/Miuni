@@ -1,1 +1,263 @@
-<h1>miunilabs</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiuniLabs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#0b1020;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .bg{
+      position:fixed;
+      inset:0;
+      background:
+      radial-gradient(circle at top left,#4f46e5 0%,transparent 35%),
+      radial-gradient(circle at bottom right,#06b6d4 0%,transparent 35%),
+      #0b1020;
+      z-index:-1;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:24px 8%;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#d1d5db;
+      margin-left:24px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:white;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:0 20px;
+    }
+
+    .hero-content{
+      max-width:900px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:10px 18px;
+      border-radius:999px;
+      color:#cbd5e1;
+      margin-bottom:28px;
+      backdrop-filter:blur(10px);
+    }
+
+    h1{
+      font-size:72px;
+      line-height:1.05;
+      margin-bottom:24px;
+      font-weight:800;
+    }
+
+    h1 span{
+      background:linear-gradient(90deg,#60a5fa,#22d3ee,#a78bfa);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .subtitle{
+      font-size:22px;
+      line-height:1.7;
+      color:#cbd5e1;
+      margin-bottom:40px;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 28px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .primary{
+      background:linear-gradient(135deg,#4f46e5,#06b6d4);
+      color:white;
+      box-shadow:0 10px 30px rgba(79,70,229,0.35);
+    }
+
+    .primary:hover{
+      transform:translateY(-3px);
+    }
+
+    .secondary{
+      border:1px solid rgba(255,255,255,0.15);
+      color:white;
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(10px);
+    }
+
+    .secondary:hover{
+      background:rgba(255,255,255,0.1);
+    }
+
+    .features{
+      padding:100px 8%;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:28px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:32px;
+      border-radius:24px;
+      backdrop-filter:blur(12px);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      background:rgba(255,255,255,0.08);
+    }
+
+    .card h3{
+      font-size:24px;
+      margin-bottom:14px;
+    }
+
+    .card p{
+      color:#cbd5e1;
+      line-height:1.7;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      color:#94a3b8;
+      border-top:1px solid rgba(255,255,255,0.08);
+    }
+
+    @media(max-width:768px){
+      h1{
+        font-size:48px;
+      }
+
+      .subtitle{
+        font-size:18px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg"></div>
+
+  <header>
+    <div class="logo">MiuniLabs</div>
+
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="tag">
+        Building apps that simplify everyday life
+      </div>
+
+      <h1>
+        Smart apps. <br>
+        <span>Simple experiences.</span>
+      </h1>
+
+      <p class="subtitle">
+        MiuniLabs develops beautiful and powerful applications
+        designed to make daily life faster, easier, and more enjoyable.
+      </p>
+
+      <div class="buttons">
+        <a href="/affiliate" class="btn primary">Explore Apps</a>
+        <a href="https://github.com/miuni2024" class="btn secondary">
+          GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="features">
+
+    <div class="card">
+      <h3>⚡ Fast</h3>
+      <p>
+        Optimized applications with smooth experiences
+        and lightweight performance.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Beautiful UI</h3>
+      <p>
+        Modern interfaces designed with simplicity,
+        elegance, and usability in mind.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Productivity</h3>
+      <p>
+        Tools and apps that help people save time
+        and reduce complexity in daily tasks.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 MiuniLabs — Develops apps to ease life.
+  </footer>
+
+</body>
+</html>
