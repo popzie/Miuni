@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Miuni - Product Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
 
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #searchBar {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      width: 60%;
+      max-width: 400px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    #productContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      min-height: 420px;
+      position: relative;
+    }
+
+    .product-content {
+      flex-grow: 1;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .product h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .buy-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .product-content:hover {
+      opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+  <header>Miuni</header>
+
+  <input type="text" id="searchBar" placeholder="Search products...">
+
+  <div id="productContainer"></div>
+
+  <script>
+    let allProducts = [];
+
+    function renderProducts(products) {
+      const container = document.getElementById('productContainer');
+      container.innerHTML = '';
+
+      if (products.length === 0) {
+        container.innerHTML = '<p>No matching products found.</p>';
+        return;
+      }
+
+      products.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'product';
+        card.innerHTML = `
+          <a class="product-content" href="product.html?id=${p.id}">
+            <img src="${p.image}" alt="${p.name}">
+            <h2>${p.name}</h2>
+            <p>${p.description}</p>
+          </a>
+          <a href="${p.link}" class="buy-button" target="_blank">Buy Now</a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    fetch('products.json')
+      .then(res => res.json())
+      .then(data => {
+        allProducts = data;
+        renderProducts(allProducts);
+      })
+      .catch(error => {
+        console.error('Error loading products:', error);
+        document.body.innerHTML += `<p style="color:red;">Error loading products.json</p>`;
+      });
+
+    document.getElementById('searchBar').addEventListener('input', function () {
+      const keyword = this.value.toLowerCase();
+      const filtered = allProducts.filter(p =>
+        p.name.toLowerCase().includes(keyword) ||
+        p.description.toLowerCase().includes(keyword)
+      );
+      renderProducts(filtered);
+    });
+  </script>
+</body>
+</html>
