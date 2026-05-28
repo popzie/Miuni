@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "name": "Trunativ Monk Fruit Sweetener",
+    "image": "Images/trunativ_monk.jpeg",
+    "link": "https://amzn.to/3SQ2YI6",
+    "description": "zero sugar spike sugar alternative"
+  },
+  {
+    "id": 2,
+    "name": "Solis Royale Motorized Recliner",
+    "image": "Images/solis_recliner.jpg",
+    "link": "https://amzn.to/4mxT1Nf",
+    "description": "best motorized recliner below 20k"
+  },
+  {
+    "id": 3,
+    "name": "Green Gainz Roasted Edamame",
+    "image": "Images/green_gainz_edamame.jpg",
+    "link": "https://amzn.to/4jlh3Iz",
+    "description": "protein on the go"
+  },
+  {
+    "id": 4,
+    "name": "Singer 2250 Tradition Zig-Zag Sewing Machine",
+    "image": "Images/singer_2250.jpg",
+    "link": "https://amzn.to/4k5QfND",
+    "description": "best electric sewing machine under 10k"
+  },
+  {
+    "id": 5,
+    "name": "Neutrogena Visible Repair Retinol Day & Night Eye Cream",
+    "image": "Images/neutrogena_eyecream.jpg",
+    "link": "https://amzn.to/43C6jjd",
+    "description": "best eyecream"
+  },
+  {
+    "id": 6,
+    "name": "HomeCloud Dish Drying Mat for Kitchen Counter Hide Stain Super Absorbent",
+    "image": "Images/dish_mat.jpg",
+    "link": "https://amzn.to/4dHYoW7",
+    "description": "dish drying mat"
+  },
+  {
+    "id": 7,
+    "name": "Cosmix No-Nonsense Plant Protein Pro | 26g Protein/Serve",
+    "image": "Images/cosmix_plant_protein.jpg",
+    "link": "https://amzn.to/4kxrdXk",
+    "description": "plant based protein powder"
+  },
+  {
+    "id": 8,
+    "name": "FAE Beauty SPF 50+ PA++++ Lightweight Sunscreen",
+    "image": "Images/fae_sunscreen.jpg",
+    "link": "https://amzn.to/3Si0pP1",
+    "description": "sunscreen for oily skin"
+  },
+  {
+    "id": 9,
+    "name": "Minimalist Anti-Acne 2% Salicylic Acid Face Serum",
+    "image": "Images/minimalist_salicylic.jpg",
+    "link": "https://amzn.to/3YWHIEf",
+    "description": "salicylic acid for all skin type"
+  },
+  {
+    "id": 10,
+    "name": "Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2)",
+    "image": "Images/lifelong_dumbell_2kg.jpg",
+    "link": "https://amzn.to/3YZPjlo",
+    "description": "2*2kg dumbell for beginners"
+  },
+  {
+    "id": 11,
+    "name": "Gear Turbo Expandable Water Resistant Anti-Theft Backpack",
+    "image": "Images/gear_45l.jpg",
+    "link": "https://amzn.to/4ky7irn",
+    "description": "cabin backback"
+  },
+  {
+    "id": 12,
+    "name": "Safari Seek 45L Laptop Backpack Bag for Men and Women",
+    "image": "Images/safari_45l.jpg",
+    "link": "https://amzn.to/4kbLXnO",
+    "description": "cabin backback"
+  },
+  {
+    "id": 13,
+    "name": "Vaseline Healthy Bright, Daily Brightening Daily Moisturizer",
+    "image": "Images/vaseline_moisturizer.jpg",
+    "link": "https://amzn.to/4kR5V7k",
+    "description": "daily moisturizer"
+  },
+  {
+    "id": 14,
+    "name": "Wellbeing Nutrition Glow Korean Marine Collagen Skin Radiance Peptide",
+    "image": "Images/wellbeing_collagen.jpg",
+    "link": "https://amzn.to/4jE6YXd",
+    "description": "collagen"
+  },
+  {
+    "id": 15,
+    "name": "Chemist at Play UnderArm Roll-On with 5% AHA",
+    "image": "Images/chemist_at_play_roll_on.jpg",
+    "link": "https://amzn.to/4mUEs6q",
+    "description": "underarm roll on"
+  },
+  {
+    "id": 16,
+    "name": "Dove Acne Clear Serum Body Wash",
+    "image": "Images/dove_body_wash.jpg",
+    "link": "https://amzn.to/4kVYyLT",
+    "description": "bodywash"
+  },
+  {
+    "id": 17,
+    "name": "FURLAY Slate Office Desk and Study Table | 1 Year Warranty",
+    "image": "Images/furlay_table.jpg",
+    "link": "https://amzn.to/4no7qMr",
+    "description": "metal work table"
+  },
+  {
+    "id": 18,
+    "name": "FURLAY Aero Study Table | Century Engineered Wood | 100 x 50 x 77 cm",
+    "image": "Images/furlay_table_wood.jpg",
+    "link": "https://amzn.to/40nioHZ",
+    "description": "wooden swork table"
+  },
+  {
+    "id": 19,
+    "name": "MSI B760M Bomber WiFi Motherboard, Micro-ATX - Supports 14th/13th/12th Gen Intel Core",
+    "image": "Images/msi_760M.jpg",
+    "link": "https://amzn.to/3ZU5ktB",
+    "description": "best ddr5 motherboard for Intel"
+  },
+  {
+    "id": 20,
+    "name": "Lifelong USB Direct Thermal Label Printer | 4x6 Black and White",
+    "image": "Images/life_long_thermal.jpg",
+    "link": "https://amzn.to/3GhHS2R",
+    "description": "thermal printer"
+  },
+  {
+    "id": 21,
+    "name": "Ant Esports Elite 1100 Mid-Tower Computer Case/Gaming Cabinet - Black",
+    "image": "Images/ant_cabinet.jpg",
+    "link": "https://amzn.to/4np5Z08",
+    "description": "cpu cabinet"
+  }
+]
